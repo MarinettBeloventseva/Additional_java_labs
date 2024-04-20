@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rozetka</title>
+</head>
+<body>
+<style>
+body {
+  font-family: 'Open Sans', arial, sans-serif;
+  color: #494d55;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h3 {
+  text-align: center;
+}
+img {
+  display: block;
+  height: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+button {
+position: relative;
+  text-align: center;
+}
+</style>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/ROZETKA-Logo-L3-B-RGB.png/1200px-ROZETKA-Logo-L3-B-RGB.png">
+<h1>Rozetka</h1>
+
+<br><br>
+<h3>Mobile category</h3>
+<br><br>
+<ul>
+    <li th:each ="num : ${items}">
+        <p class="list" th:utext="${num}"></p>
+    </li>
+</ul>
+
+</body>
+</html>
